@@ -26,7 +26,7 @@ if [ "${ZALENIUM}" != "true" ]; then
     shutdown "Failed while waiting for selenium hub to start!"
 fi
 
-JAVA_OPTS="-Dwebdriver.gecko.driver=/usr/bin/geckodriver ${JAVA_OPTS}"
+JAVA_OPTS="-Dwebdriver.gecko.driver=/usr/bin/geckodriver.sh ${JAVA_OPTS}"
 JAVA_OPTS="$(java-dynamic-memory-opts.sh) ${JAVA_OPTS}"
 echo "INFO: JAVA_OPTS are '${JAVA_OPTS}'"
 
