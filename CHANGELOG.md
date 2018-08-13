@@ -1,3 +1,911 @@
+## 3.13.0-p4
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.13.0-p3...3.13.0-p4 (2018-08-11)
+    + Leo Gallucci (2):
+        * [068f0ef] Upgrade Chrome patch level to 68.0.3440.106
+        * [8ae14ea] Upgrade Firefox patch level to 61.0.2
+ + **Image tag details:**
+    + Selenium version: 3.13.0 (2f0d292)
+    + Chrome stable:  68.0.3440.106
+    + Firefox stable: 61.0.2
+    + Geckodriver: 0.21.0
+    + Chromedriver: 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706)
+    + Java: OpenJDK Java 1.8.0_181-8u181-b13-0ubuntu0.16.04.1-b13
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180726
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.13.0-269
+    + Image size: 1.39GB
+    + Digest: sha256:4906cc074cc1ebb8db0a2da99ea9e0598c0190a3d047cd9f7a71266f94e7ec43
+
+## 3.13.0-p3
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.13.0-p2...3.13.0-p3 (2018-08-01)
+    + Leo Gallucci (1):
+        * [fdccba2] Upgrade Chrome patch level to 68.0.3440.84
+ + **Image tag details:**
+    + Selenium version: 3.13.0 (2f0d292)
+    + Chrome stable:  68.0.3440.84
+    + Firefox stable: 61.0.1
+    + Geckodriver: 0.21.0
+    + Chromedriver: 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180726
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.13.0-268
+    + Image size: 1.39GB
+    + Digest: sha256:464cc5a7582d477adb3aabf15e73932c36791438e269ab318a09858b19e4984b
+
+## 3.13.0-p2
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.13.0-p1...3.13.0-p2 (2018-07-28)
+    + Leo Gallucci (3):
+        * [016aa64] Upgrade Ubuntu xenial date to 20180726
+        * [e215cec] Upgrade Chromedriver from 2.40 to 2.41
+        * [ec7d1e6] Upgrade Chrome major to 68.0.3440.75
+ + **Image tag details:**
+    + Selenium version: 3.13.0 (2f0d292)
+    + Chrome stable:  68.0.3440.75
+    + Firefox stable: 61.0.1
+    + Geckodriver: 0.21.0
+    + Chromedriver: 2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180726
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.13.0-267
+    + Image size: 1.39GB
+    + Digest: sha256:6d48dedd200ba2fd058f0de808f900bf1f5294b3e0564501707d97fd01c526bc
+
+## 3.13.0-p1
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.13.0-p0...3.13.0-p1 (2018-07-17)
+    + Tobias Gruetzmacher (1):
+        * [e08a073] Encode with YUV420P, to be more compatible
+ + **Image tag details:**
+    + Selenium version: 3.13.0 (2f0d292)
+    + Chrome stable:  67.0.3396.99
+    + Firefox stable: 61.0.1
+    + Geckodriver: 0.21.0
+    + Chromedriver: 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180525
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.13.0-266
+    + Image size: 1.39GB
+    + Digest: sha256:43b86b9fb66633d9ab82625ac5f1bc1f081540fbe38219464d44764da8340a6a
+
+## 3.13.0-p0
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p10...3.13.0-p0 (2018-07-13)
+    + Diego Molina (1):
+        * [90d466c] Upgrade to Selenium 3.13.0 (#257)
+ + **Image tag details:**
+    + Selenium version: 3.13.0 (2f0d292)
+    + Chrome stable:  67.0.3396.99
+    + Firefox stable: 61.0.1
+    + Geckodriver: 0.21.0
+    + Chromedriver: 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180525
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.13.0-265
+    + Image size: 1.39GB
+    + Digest: sha256:fffdc9020d73caec2ec6dd02de3f4b0aa3e3ae6e858661568d2d40f89be15fb8
+
+## 3.12.0-p10
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p9...3.12.0-p10 (2018-07-07)
+    + Leo Gallucci (1):
+        * [cb7d4e2] Upgrade Firefox patch to 61.0.1 (#255)
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.99
+    + Firefox stable: 61.0.1
+    + Geckodriver: 0.21.0
+    + Chromedriver: 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180525
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-264
+    + Image size: 1.39GB
+    + Digest: sha256:47488162a244c10027c78a23b0866e326299e11ddf8cdc220abf8ef6c2c195a5
+
+## 3.12.0-p9
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p8...3.12.0-p9 (2018-06-26)
+    + Leo Gallucci (1):
+        * [bf8dc40] Upgrade Firefox minor from 60.0.2 to 61.0 (#254)
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.99
+    + Firefox stable: 61.0
+    + Geckodriver: 0.21.0
+    + Chromedriver: 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180525
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-263
+    + Image size: 1.37GB
+    + Digest: sha256:1282e8521c6b6a26e3248bd00238906497939e25e8ae9b16c7b51ee4b87b27d6
+
+## 3.12.0-p8
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p7...3.12.0-p8 (2018-06-26)
+    + Leo Gallucci (1):
+        * [b0464aa] Upgrade Chrome patch level to 67.0.3396.99
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.99
+    + Firefox stable: 60.0.2
+    + Geckodriver: 0.21.0
+    + Chromedriver: 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180525
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-262
+    + Image size: 1.38GB
+    + Digest: sha256:4828a256072a8df5d59991ec670676491d50073e782c01be62aa1e082953dccb
+
+## 3.12.0-p7
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p6...3.12.0-p7 (2018-06-16)
+    + Leo Gallucci (1):
+        * [2d7afb3] Upgrade GeckoDriver minor to 0.21.0
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.87
+    + Firefox stable: 60.0.2
+    + Geckodriver: 0.21.0
+    + Chromedriver: 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180525
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-261
+    + Image size: 1.38GB
+    + Digest: sha256:07298d87f44fff630b02e99dc86530a34bd254dbeeba9a84c5e5f36152f8e680
+
+## 3.12.0-p6
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p5...3.12.0-p6 (2018-06-14)
+    + Diego Molina (1):
+        * [a17b3be] Upgrade Ubuntu base image to 20180525 (#250)
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.87
+    + Firefox stable: 60.0.2
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180525
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-260
+    + Image size: 1.37GB
+    + Digest: sha256:8eb2afcaed8b25d5de20e25694efb8f10d0e793bfd123588b979079912bed006
+
+## 3.12.0-p5
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p4...3.12.0-p5 (2018-06-13)
+    + Leo Gallucci (1):
+        * [9edc177] Upgrade Chrome patch level to 67.0.3396.87
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.87
+    + Firefox stable: 60.0.2
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-259
+    + Image size: 1.37GB
+    + Digest: sha256:c2e84b90c8849581f9d4d345285df08769613ade6f1ed3cf85a5d38ab594e31c
+
+## 3.12.0-p4
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p3...3.12.0-p4 (2018-06-09)
+    + Leo Gallucci (4):
+        * [21f35d6] Upgrade Chromedriver minor to 2.40
+        * [87d1fa1] Upgrade supervisor commit to 2018-06-01
+        * [c521da5] Fix version inconsistency [ci skip]
+        * [469e7f1] Fix version inconsistency
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.79
+    + Firefox stable: 60.0.2
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-258
+    + Image size: 1.37GB
+    + Digest: sha256:e942d151d8e84669682a31512806f4d034f65b39f8f41098faf7b600d2a98081
+
+## 3.12.0-p3
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p2...3.12.0-p3 (2018-06-07)
+    + Leo Gallucci (1):
+        * [095db55] Upgrade Firefox patch level to 60.0.2
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.79
+    + Firefox stable: 60.0.2
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.39.562737 (dba483cee6a5f15e2e2d73df16968ab10b38a2bf)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-256
+    + Image size: 1.37GB
+    + Digest: sha256:7c37b451aec87cfe0d08264d532bf095c213e31571ed335ff87cc986193fbfdb
+
+## 3.12.0-p2
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p1...3.12.0-p2 (2018-06-07)
+    + Leo Gallucci (1):
+        * [cf8aa1b] Upgrade Chrome patch level to 67.0.3396.79
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.79
+    + Firefox stable: 60.0.1
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.39.562737 (dba483cee6a5f15e2e2d73df16968ab10b38a2bf)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-255
+    + Image size: 1.37GB
+    + Digest: sha256:b7adba6fb4e5ec08451486052120d52adaa65d019c31aa9653e08056b032f944
+
+## 3.12.0-p1
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.12.0-p0...3.12.0-p1 (2018-05-30)
+    + Diego Molina (1):
+        * [6f36828] Fix Zalenium job build
+    + Leo Gallucci (2):
+        * [5d6a90c] Upgrade Chrome major to 67.0.3396.62
+        * [97e6c04] Upgrade Chromedriver minor to 2.39
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  67.0.3396.62
+    + Firefox stable: 60.0.1
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.39.562737 (dba483cee6a5f15e2e2d73df16968ab10b38a2bf)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-254
+    + Image size: 1.37GB
+    + Digest: sha256:6449996450c11517d4938f4d7372615e45f5a443b40921de5da5b24b3a634abd
+
+## 3.12.0-p0
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p15...3.12.0-p0 (2018-05-17)
+    + Leo Gallucci (4):
+        * [adc8ed4] Improve debugging support via -e DEBUG=true or DEBUG=bash
+        * [393e49a] Upgrade Selenium (minor) from 3.11.0 to 3.12.0
+        * [c0791ae] Minor testing cleanups
+        * [13a2dc0] Fix network interface binding issue provoked by Selenium 3.12 changes
+ + **Image tag details:**
+    + Selenium version: 3.12.0 (7c6e0b3)
+    + Chrome stable:  66.0.3359.181
+    + Firefox stable: 60.0.1
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.12.0-253
+    + Image size: 1.37GB
+    + Digest: sha256:bb4781588dea3148a7810422e7bc12b77d76b868359980f7844877f651bdbc59
+
+## 3.11.0-p15
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p14...3.11.0-p15 (2018-05-17)
+    + Leo Gallucci (1):
+        * [bdc5130] Upgrade Firefox patch level to 60.0.1 (#243)
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  66.0.3359.181
+    + Firefox stable: 60.0.1
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-252
+    + Image size: 1.37GB
+    + Digest: sha256:a0ec23adc2589d0b81e3213407b7aa3c677ec5aade46abab3925938fd66c381c
+
+## 3.11.0-p14
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p13...3.11.0-p14 (2018-05-16)
+    + Leo Gallucci (1):
+        * [22096aa] Upgrade Chrome patch level to 66.0.3359.181 (#242)
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  66.0.3359.181
+    + Firefox stable: 60.0
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-251
+    + Image size: 1.37GB
+    + Digest: sha256:7aaf920509116d4c31c77709febb24409d63bd0025fdda71882d3a047102b0f5
+
+## 3.11.0-p13
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p12...3.11.0-p13 (2018-05-11)
+    + Leo Gallucci (1):
+        * [3f067cd] Upgrade Chrome patch level to 66.0.3359.170 (#240)
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  66.0.3359.170
+    + Firefox stable: 60.0
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)
+    + Java: OpenJDK Java 1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-250
+    + Image size: 1.37GB
+    + Digest: sha256:7927028cb594839526acc79cdc6ec68ef6ab811da65907cf2bde466f7c830062
+
+## 3.11.0-p12
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p11...3.11.0-p12 (2018-05-10)
+    + Diego Molina (1):
+        * [e7c75e7] Upgrading to FF 60.0 (#238)
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  66.0.3359.139
+    + Firefox stable: 60.0
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)
+    + Java: OpenJDK Java 1.8.0_162-8u162-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-249
+    + Image size: 1.37GB
+    + Digest: sha256:46ad251f1dada2ceb28333cd55c469cb9c9272613c7d4703aa7ee940549b05de
+
+## 3.11.0-p11
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p10...3.11.0-p11 (2018-05-04)
+    + Kristian Jensen (1):
+        * [8aba49f] Fixing 236 (#237) via __CONTAINER_IP__
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  66.0.3359.139
+    + Firefox stable: 59.0.3
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)
+    + Java: OpenJDK Java 1.8.0_162-8u162-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-248
+    + Image size: 1.37GB
+    + Digest: sha256:3c80c72474a1fb1c3f5b022f8778b520ebf0ce96db4c08dbdf56d5e11b089d2a
+
+## 3.11.0-p10
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p9...3.11.0-p10 (2018-05-03)
+    + Diego Molina (1):
+        * [890f7ea] Upgrade FF to 59.0.3
+    + Leo Gallucci (2):
+        * [9e78c2e] Upgrade Ubuntu xenial-20180417 (date)
+        * [0b0594c] Upgrade Firefox patch level to 59.0.3
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  66.0.3359.139
+    + Firefox stable: 59.0.3
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)
+    + Java: OpenJDK Java 1.8.0_162-8u162-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180417
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-247
+    + Image size: 1.37GB
+    + Digest: sha256:06d741c323b5657f5c67b32e6fa185964cb19ff8b8bc62f5977f59844d3d4f6e
+
+## 3.11.0-p9
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p8...3.11.0-p9 (2018-04-27)
+    + Leo Gallucci (1):
+        * [f705234] Upgrade Chrome path level to 66.0.3359.139
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  66.0.3359.139
+    + Firefox stable: 59.0.2
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)
+    + Java: OpenJDK Java 1.8.0_162-8u162-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180412
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-246
+    + Image size: 1.37GB
+    + Digest: sha256:82e72a9eed5d4c14a68a2a5e1a9f3a56a33e14accb16e76a9ed51f53cc762b38
+
+## 3.11.0-p8
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p7...3.11.0-p8 (2018-04-19)
+    + Diego Molina (2):
+        * [46d93ce] Update Chrome to 66.0.3359.117
+        * [334a49c] Updating ChromeDriver to 2.38
+    + Leo Gallucci (1):
+        * [ef5e535] Fix broken pip 10.0.0
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  66.0.3359.117
+    + Firefox stable: 59.0.2
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.38.551591 (bcc4a2cdef0f6b942b2bb8049068f65340fa2a69)
+    + Java: OpenJDK Java 1.8.0_162-8u162-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180412
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-245
+    + Image size: 1.37GB
+    + Digest: sha256:22a130dd43e99ef1017d1662ce3e8d2c22082ec8621ab00c18e65651ad5ce599
+
+## 3.11.0-p7
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p6...3.11.0-p7 (2018-04-13)
+    + Leo Gallucci (1):
+        * [e8d5483] Upgrade Ubuntu xenial-20180412 (date)
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  65.0.3325.181
+    + Firefox stable: 59.0.2
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7)
+    + Java: OpenJDK Java 1.8.0_162-8u162-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180412
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-244
+    + Image size: 1.39GB
+    + Digest: sha256:0e55a9d352abc77d7d2092f7c5922e39b82f4a7bdc3ac006340a1d867012ef64
+
+## 3.11.0-p6
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p5...3.11.0-p6 (2018-04-09)
+    + Diego Molina (1):
+        * [e083d54] Update GeckoDriver to v0.20.1
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  65.0.3325.181
+    + Firefox stable: 59.0.2
+    + Geckodriver: 0.20.1
+    + Chromedriver: 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7)
+    + Java: OpenJDK Java 1.8.0_162-8u162-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180228
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-243
+    + Image size: 1.39GB
+    + Digest: sha256:9929059b55f11eee716bf82a9ee6e555ec401ae6a35c849fd9336bf37c12a2c7
+
+## 3.11.0-p5
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p4...3.11.0-p5 (2018-03-27)
+    + Leo Gallucci (1):
+        * [9f5caa5] Upgrade Firefox patch level to 59.0.2
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  65.0.3325.181
+    + Firefox stable: 59.0.2
+    + Geckodriver: 0.20.0
+    + Chromedriver: 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180228
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-242
+    + Image size: 1.39GB
+    + Digest: sha256:bf176e115b02389f139f675d89f25d9e1842cf4cbff90e88205e98a849c0f487
+
+## 3.11.0-p4
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p3...3.11.0-p4 (2018-03-22)
+    + Leo Gallucci (1):
+        * [0d95a8d] Upgrade Chrome patch level to 65.0.3325.181
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  65.0.3325.181
+    + Firefox stable: 59.0.1
+    + Geckodriver: 0.20.0
+    + Chromedriver: 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180228
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-241
+    + Image size: 1.39GB
+    + Digest: sha256:a71aec92f8491ddf36cc252b56215409ab5df9a6364f030bc269b6e384493771
+
+## 3.11.0-p3
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p2...3.11.0-p3 (2018-03-17)
+    + Leo Gallucci (1):
+        * [db0f6e5] Upgrade Firefox patch to 59.0.1
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  65.0.3325.162
+    + Firefox stable: 59.0.1
+    + Geckodriver: 0.20.0
+    + Chromedriver: 2.37.543619 (a237acd3116cac3b3f0da42a000502ce3fafcb23)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180228
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-240
+    + Image size: 1.39GB
+    + Digest: sha256:e0e77bafe4f68a70fc5a2f41d15d8fb340bc197b93ec65519899540aae018e0f
+
+## 3.11.0-p2
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p1...3.11.0-p2 (2018-03-16)
+    + Leo Gallucci (4):
+        * [8e045e3] Upgrade Chrome patch level to 65.0.3325.162
+        * [ab58c48] Upgrade Firefox major from 58.0.2 to 59.0
+        * [5380d2c] Upgrade Chromedriver from 2.36 to 2.37
+        * [db1ebc2] Do not fail because of bitballoon
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  65.0.3325.162
+    + Firefox stable: 59.0
+    + Geckodriver: 0.20.0
+    + Chromedriver: 2.37.543619 (a237acd3116cac3b3f0da42a000502ce3fafcb23)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180228
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-239
+    + Image size: 1.39GB
+    + Digest: sha256:8fec6bad96f83cc3c9e3a83b3c6846148d8d06fa058e92a4de3b13fb5acddd03
+
+## 3.11.0-p1
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.11.0-p0...3.11.0-p1 (2018-03-13)
+    + Diego Molina (1):
+        * [2b07831] Upgrading GeckoDriver to 0.20.0
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  65.0.3325.146
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.20.0
+    + Chromedriver: 2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180228
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-233
+    + Image size: 1.38GB
+    + Digest: sha256:b2e5640bec2800af223e59f0c3ef27b6252b4b5256084c194a4485f422687bdc
+
+## 3.11.0-p0
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.10.0-p3...3.11.0-p0 (2018-03-12)
+    + Diego Molina (2):
+        * [21b5b67] Upgrading to Selenium 3.11.0
+        * [d0c138d] Upgrade Python bindings to 3.11.0
+ + **Image tag details:**
+    + Selenium version: 3.11.0 (e59cfb3)
+    + Chrome stable:  65.0.3325.146
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180228
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.11.0-232
+    + Image size: 1.37GB
+    + Digest: sha256:28db041b162df3457a2a231295588a11d3485a77be0183fb8ca28cae009805fa
+
+## 3.10.0-p3
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.10.0-p2...3.10.0-p3 (2018-03-07)
+    + Diego Molina (1):
+        * [e90be84] Update Chrome to 65.0.3325.146
+    + Leo Gallucci (1):
+        * [e1c687d] Bump Ubuntu xenial to 2018-02-28
+ + **Image tag details:**
+    + Selenium version: 3.10.0 (176b4a9)
+    + Chrome stable:  65.0.3325.146
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180228
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.10.0-231
+    + Image size: 1.37GB
+    + Digest: sha256:ca91c7c9d0f3cb6f68aae1ca3a8d366e817377fe7ee3b1c465f0d223aa1c52f7
+
+## 3.10.0-p2
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.10.0-p1...3.10.0-p2 (2018-03-06)
+    + Leo Gallucci (1):
+        * [d65f588] Upgrade Python bindings to 3.10.0 for tests (#221)
+ + **Image tag details:**
+    + Selenium version: 3.10.0 (176b4a9)
+    + Chrome stable:  64.0.3282.186
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180123
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.10.0-230
+    + Image size: 1.38GB
+    + Digest: sha256:b3d8cf040b0fd810b9bc11c20da6248eb693e9fa9109cd12b5bc8af98ddb87f3
+
+## 3.10.0-p1
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.10.0-p0...3.10.0-p1 (2018-03-06)
+    + Diego Molina (1):
+        * [c69da8c] Update ChromeDriver to 2.36
+ + **Image tag details:**
+    + Selenium version: 3.10.0 (176b4a9)
+    + Chrome stable:  64.0.3282.186
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.36.540471 (9c759b81a907e70363c6312294d30b6ccccc2752)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180123
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.10.0-229
+    + Image size: 1.38GB
+    + Digest: sha256:d9f3238161d5f59160feacecf0939bf7c29154666eaa4fc3f99db37703f4165e
+
+## 3.10.0-p0
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.9.1-p2...3.10.0-p0 (2018-03-04)
+    + Diego Molina (1):
+        * [8a4f363] Upgrading to 3.10.0
+ + **Image tag details:**
+    + Selenium version: 3.10.0 (176b4a9)
+    + Chrome stable:  64.0.3282.186
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180123
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.10.0-228
+    + Image size: 1.38GB
+    + Digest: sha256:15732906c6eaac33174b25902495b6cddd936cb36543276bf419bb62c917be06
+
+## 3.9.1-p2
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.9.1-p1...3.9.1-p2 (2018-02-23)
+    + Leo Gallucci (1):
+        * [9e79bc3] Upgrade Chrome Patch to 64.0.3282.186
+ + **Image tag details:**
+    + Selenium version: 3.9.1 (63f7b50)
+    + Chrome stable:  64.0.3282.186
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180123
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.9.1-227
+    + Image size: 1.38GB
+    + Digest: sha256:797ac113064552355f316410fed94c788c4f4873877f3770baa16d940b06c3bc
+
+## 3.9.1-p1
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.9.1-p0...3.9.1-p1 (2018-02-14)
+    + Leo Gallucci (2):
+        * [7d195e0] Add MAINTAINER Diego Molina
+        * [c5a1151] Upgrade Chrome patch to 64.0.3282.167 (#218)
+ + **Image tag details:**
+    + Selenium version: 3.9.1 (63f7b50)
+    + Chrome stable:  64.0.3282.167
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180123
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.9.1-226
+    + Image size: 1.41GB
+    + Digest: sha256:dfb8e395153c3fe7168cf39aecfc6afa22f69c0c1b3c160a290fffe0ed8f6887
+
+## 3.9.1-p0
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.9.0-p1...3.9.1-p0 (2018-02-10)
+    + Diego Molina (1):
+        * [c666226] Bump to Selenium 3.9.1
+ + **Image tag details:**
+    + Selenium version: 3.9.1 (63f7b50)
+    + Chrome stable:  64.0.3282.140
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180123
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.9.1-225
+    + Image size: 1.4GB
+    + Digest: sha256:5cefdc2d820372ed209647919ae5eba2ed0fe174636b1d22025599771b70fe41
+
+## 3.9.0-p1
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.9.0-p0...3.9.0-p1 (2018-02-08)
+    + Diego Molina (1):
+        * [144275a] Bump Firefox to 58.0.2 (#213)
+ + **Image tag details:**
+    + Selenium version: 3.9.0 (698b3178f0)
+    + Chrome stable:  64.0.3282.140
+    + Firefox stable: 58.0.2
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180123
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.9.0-224
+    + Image size: 1.4GB
+    + Digest: sha256:43596df425663fe262a9ea43188a15f2f201915226252aa5d13593281d57b85b
+
+## 3.9.0-p0
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.8.1-p13...3.9.0-p0 (2018-02-07)
+    + Diego Molina (2):
+        * [682a917] Upgrading Selenium to 3.9.0
+        * [839ab92] Python bindings upgrade to 3.9.0
+ + **Image tag details:**
+    + Selenium version: 3.9.0 (698b3178f0)
+    + Chrome stable:  64.0.3282.140
+    + Firefox stable: 58.0.1
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180123
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.9.0-223
+    + Image size: 1.4GB
+    + Digest: sha256:91eb9e9e9f27eecd851df8a412413ddfde1038957af03ae6755660a078c93b38
+
+## 3.8.1-p13
+ + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.8.1-p12...3.8.1-p13 (2018-02-02)
+    + Diego Molina (1):
+        * [3724e0b] Bump Chrome and Firefox
+ + **Image tag details:**
+    + Selenium version: 3.8.1 (6e95a6684b)
+    + Chrome stable:  64.0.3282.140
+    + Firefox stable: 58.0.1
+    + Geckodriver: 0.19.1
+    + Chromedriver: 2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881)
+    + Java: OpenJDK Java 1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
+    + Default Timezone: Europe/Berlin
+    + FROM ubuntu:xenial-20180123
+    + Python: 3.5.2
+    + Tested on kernel CI  host: 4.4.0-101-generic x86_64
+    + Built at CI  host with: Docker version 17.09.0, build afdb6d4
+    + Built at CI  host with: Docker Compose version 1.17.1, build 6d101fb
+    + Image version: 3.8.1-222
+    + Image size: 1.4GB
+    + Digest: sha256:6208bd0f856d06d105e74b8730cabe9ba1be3cf6b5e448c3f4b5546aea271a7a
+
 ## 3.8.1-p12
  + **Changes:** https://github.com/elgalu/docker-selenium/compare/3.8.1-p11...3.8.1-p12 (2018-01-26)
     + Diego Molina (1):

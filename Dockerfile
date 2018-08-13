@@ -5,7 +5,7 @@
 # To overwrite the build args use:
 #  docker build ... --build-arg UBUNTU_DATE=20171006
 ARG UBUNTU_FLAVOR=xenial
-ARG UBUNTU_DATE=20180123
+ARG UBUNTU_DATE=20180726
 
 #== Ubuntu xenial is 16.04, i.e. FROM ubuntu:16.04
 # Find latest images at https://hub.docker.com/r/library/ubuntu/
@@ -28,8 +28,11 @@ RUN  echo "deb http://archive.ubuntu.com/ubuntu ${UBUNTU_FLAVOR} main universe\n
   && echo "deb http://archive.ubuntu.com/ubuntu ${UBUNTU_FLAVOR}-updates main universe\n" >> /etc/apt/sources.list \
   && echo "deb http://archive.ubuntu.com/ubuntu ${UBUNTU_FLAVOR}-security main universe\n" >> /etc/apt/sources.list
 
+MAINTAINER Diego Molina <diemol@gmail.com>
 MAINTAINER Leo Gallucci <elgalu3+dosel@gmail.com>
+
 # https://github.com/docker/docker/pull/25466#discussion-diff-74622923R677
+LABEL maintainer "Diego Molina <diemol@gmail.com>"
 LABEL maintainer "Leo Gallucci <elgalu3+dosel@gmail.com>"
 
 # No interactive frontend during docker build
@@ -49,10 +52,11 @@ RUN set -ex \
     3B4FE6ACC0B21F32 \
     A2F683C52980AECF \
     F76221572C52609D \
+    58118E89F3A912897C070ADBF76221572C52609D \
   ; do \
+    gpg --keyserver keyserver.ubuntu.com --recv-keys "$key" || \
     gpg --keyserver pgp.mit.edu --recv-keys "$key" || \
     gpg --keyserver keyserver.pgp.com --recv-keys "$key" || \
-    gpg --keyserver keyserver.ubuntu.com --recv-keys "$key" || \
     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ; \
   done
 
@@ -263,8 +267,8 @@ RUN echo "${UBUNTU_FLAVOR}" > UBUNTU_FLAVOR \
 # Selenium latest
 #=================
 # Layer size: medium ~22 MB
-ARG SEL_DIRECTORY="3.8"
-ARG SEL_VER="3.8.1"
+ARG SEL_DIRECTORY="3.13"
+ENV SEL_VER="3.13.0"
 
 RUN echo $SEL_VER
 RUN  export SELBASE="https://selenium-release.storage.googleapis.com" \
@@ -292,7 +296,7 @@ USER root
 #     python-openssl \
 #     libssl-dev \
 #     libffi-dev \
-#   && pip install --upgrade pip \
+#   && pip install --upgrade pip==9.0.3 \
 #   && pip install --upgrade setuptools \
 #   && rm -rf /var/lib/apt/lists/* \
 #   && apt -qyy clean
@@ -315,10 +319,10 @@ RUN apt -qqy update \
     python3-dev \
     python3-openssl \
     libssl-dev libffi-dev \
-  && pip3 install --upgrade pip \
-  && pip3 install --upgrade setuptools \
-  && pip3 install --upgrade numpy \
-  && pip3 install --requirement /test/requirements.txt \
+  && pip3 install --no-cache --upgrade pip==9.0.3 \
+  && pip3 install --no-cache setuptools \
+  && pip3 install --no-cache numpy \
+  && pip3 install --no-cache --requirement /test/requirements.txt \
   && rm -rf /var/lib/apt/lists/* \
   && apt -qyy clean
 RUN cd /usr/local/bin \
@@ -341,13 +345,14 @@ RUN cd /usr/local/bin \
 # RUN apt -qqy update \
 #   && apt -qqy install \
 #     supervisor \
+# 2018-06-01 commit: ec495be4e28c69, supervisor/version.txt: 4.0.0.dev0
 # 2017-10-21 commit: 3f04badc3237f0, supervisor/version.txt: 4.0.0.dev0
 # 2017-05-30 commit: 946d9cf3be4db3, supervisor/version.txt: 4.0.0.dev0
-# 2017-03-07 commit: 23925d017f8ecc, supervisor/version.txt: 4.0.0.dev0
-# 2017-01-05 commit: 8be5bc15e83f0f, supervisor/version.txt: 4.0.0.dev0
 ENV RUN_DIR="/var/run/sele"
-RUN SHA="3f04badc3237f0d86fa88208455d8560c20bc2e7" \
-  && pip install --upgrade \
+RUN SHA="ec495be4e28c694af1e41514e08c03cf6f1496c8" \
+  && pip install --no-cache \
+      "https://github.com/Supervisor/supervisor/zipball/${SHA}" || \
+     pip install --no-cache \
       "https://github.com/Supervisor/supervisor/zipball/${SHA}" \
   && rm -rf /var/lib/apt/lists/* \
   && apt -qyy clean
@@ -613,7 +618,7 @@ LABEL selenium_firefox_version "${FF_VER}"
 # GeckoDriver
 #============
 # Layer size: tiny: ~4 MB
-ARG GECKOD_VER="0.19.1"
+ARG GECKOD_VER="0.21.0"
 ENV GECKOD_URL="https://github.com/mozilla/geckodriver/releases/download"
 RUN wget --no-verbose -O geckodriver.tar.gz \
      "${GECKOD_URL}/v${GECKOD_VER}/geckodriver-v${GECKOD_VER}-linux64.tar.gz" \
@@ -632,7 +637,7 @@ COPY bin/fail /usr/bin/
 #===============
 # TODO: Use Google fingerprint to verify downloads
 #  https://www.google.de/linuxrepositories/
-ARG EXPECTED_CHROME_VERSION="64.0.3282.119"
+ARG EXPECTED_CHROME_VERSION="68.0.3440.106"
 ENV CHROME_URL="https://dl.google.com/linux/direct" \
     CHROME_BASE_DEB_PATH="/home/seluser/chrome-deb/google-chrome" \
     GREP_ONLY_NUMS_VER="[0-9.]{2,20}"
@@ -675,7 +680,7 @@ USER seluser
 # Chrome webdriver
 #==================
 # How to get cpu arch dynamically: $(lscpu | grep Architecture | sed "s/^.*_//")
-ARG CHROME_DRIVER_VERSION="2.35"
+ARG CHROME_DRIVER_VERSION="2.41"
 ENV CHROME_DRIVER_BASE="chromedriver.storage.googleapis.com" \
     CPU_ARCH="64"
 ENV CHROME_DRIVER_FILE="chromedriver_linux${CPU_ARCH}.zip"
@@ -847,6 +852,7 @@ ENV DEFAULT_SELENIUM_HUB_PORT="24444" \
 ENV FIREFOX_VERSION="${FF_VER}" \
   USE_SELENIUM="3" \
   CHROME_FLAVOR="stable" \
+  DEBUG="false" \
   PICK_ALL_RANDOM_PORTS="false" \
   RANDOM_PORT_FROM="23100" \
   RANDOM_PORT_TO="29999" \
@@ -925,7 +931,7 @@ ENV FIREFOX_VERSION="${FF_VER}" \
   FIREFOX="true" \
   MULTINODE="false" \
   FFMPEG_FRAME_RATE=10 \
-  FFMPEG_CODEC_ARGS="-crf 0 -preset ultrafast -qp 0" \
+  FFMPEG_CODEC_ARGS="-crf 0 -preset ultrafast -qp 0 -pix_fmt yuv420p" \
   FFMPEG_FINAL_CRF=0 \
   FFMPEG_DRAW_MOUSE=1 \
   VIDEO_TMP_FILE_EXTENSION="mkv" \
